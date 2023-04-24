@@ -28,110 +28,185 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonGetIpAddress = new System.Windows.Forms.Button();
-            this.labelIpAddress = new System.Windows.Forms.Label();
-            this.buttonPing = new System.Windows.Forms.Button();
-            this.labelPing = new System.Windows.Forms.Label();
-            this.buttonVer = new System.Windows.Forms.Button();
-            this.labelVer = new System.Windows.Forms.Label();
-            this.buttonSkype = new System.Windows.Forms.Button();
-            this.labelSkype = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            buttonGetIpAddress = new System.Windows.Forms.Button();
+            labelIpAddress = new System.Windows.Forms.Label();
+            buttonPing = new System.Windows.Forms.Button();
+            labelPing = new System.Windows.Forms.Label();
+            buttonVer = new System.Windows.Forms.Button();
+            labelVer = new System.Windows.Forms.Label();
+            buttonSkype = new System.Windows.Forms.Button();
+            labelSkype = new System.Windows.Forms.Label();
+            button1 = new System.Windows.Forms.Button();
+            labelRClone = new System.Windows.Forms.Label();
+            textBox1 = new System.Windows.Forms.TextBox();
+            button2 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            textBox2 = new System.Windows.Forms.TextBox();
+            SuspendLayout();
             // 
             // buttonGetIpAddress
             // 
-            this.buttonGetIpAddress.Location = new System.Drawing.Point(12, 43);
-            this.buttonGetIpAddress.Name = "buttonGetIpAddress";
-            this.buttonGetIpAddress.Size = new System.Drawing.Size(130, 23);
-            this.buttonGetIpAddress.TabIndex = 2;
-            this.buttonGetIpAddress.Text = "Get local IP Address";
-            this.buttonGetIpAddress.UseVisualStyleBackColor = true;
-            this.buttonGetIpAddress.Click += new System.EventHandler(this.buttonGetIpAddress_Click);
+            buttonGetIpAddress.Location = new System.Drawing.Point(14, 50);
+            buttonGetIpAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonGetIpAddress.Name = "buttonGetIpAddress";
+            buttonGetIpAddress.Size = new System.Drawing.Size(152, 27);
+            buttonGetIpAddress.TabIndex = 2;
+            buttonGetIpAddress.Text = "Get local IP Address";
+            buttonGetIpAddress.UseVisualStyleBackColor = true;
+            buttonGetIpAddress.Click += buttonGetIpAddress_Click;
             // 
             // labelIpAddress
             // 
-            this.labelIpAddress.AutoSize = true;
-            this.labelIpAddress.Location = new System.Drawing.Point(148, 48);
-            this.labelIpAddress.Name = "labelIpAddress";
-            this.labelIpAddress.Size = new System.Drawing.Size(67, 13);
-            this.labelIpAddress.TabIndex = 3;
-            this.labelIpAddress.Text = "<ip address>";
+            labelIpAddress.AutoSize = true;
+            labelIpAddress.Location = new System.Drawing.Point(173, 55);
+            labelIpAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelIpAddress.Name = "labelIpAddress";
+            labelIpAddress.Size = new System.Drawing.Size(77, 15);
+            labelIpAddress.TabIndex = 3;
+            labelIpAddress.Text = "<ip address>";
             // 
             // buttonPing
             // 
-            this.buttonPing.Location = new System.Drawing.Point(12, 72);
-            this.buttonPing.Name = "buttonPing";
-            this.buttonPing.Size = new System.Drawing.Size(130, 23);
-            this.buttonPing.TabIndex = 4;
-            this.buttonPing.Text = "Ping google.com";
-            this.buttonPing.UseVisualStyleBackColor = true;
-            this.buttonPing.Click += new System.EventHandler(this.buttonPing_Click);
+            buttonPing.Location = new System.Drawing.Point(14, 83);
+            buttonPing.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonPing.Name = "buttonPing";
+            buttonPing.Size = new System.Drawing.Size(152, 27);
+            buttonPing.TabIndex = 4;
+            buttonPing.Text = "Ping google.com";
+            buttonPing.UseVisualStyleBackColor = true;
+            buttonPing.Click += buttonPing_Click;
             // 
             // labelPing
             // 
-            this.labelPing.AutoSize = true;
-            this.labelPing.Location = new System.Drawing.Point(148, 77);
-            this.labelPing.Name = "labelPing";
-            this.labelPing.Size = new System.Drawing.Size(82, 13);
-            this.labelPing.TabIndex = 5;
-            this.labelPing.Text = "<roundtrip time>";
+            labelPing.AutoSize = true;
+            labelPing.Location = new System.Drawing.Point(173, 89);
+            labelPing.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelPing.Name = "labelPing";
+            labelPing.Size = new System.Drawing.Size(101, 15);
+            labelPing.TabIndex = 5;
+            labelPing.Text = "<roundtrip time>";
             // 
             // buttonVer
             // 
-            this.buttonVer.Location = new System.Drawing.Point(12, 14);
-            this.buttonVer.Name = "buttonVer";
-            this.buttonVer.Size = new System.Drawing.Size(130, 23);
-            this.buttonVer.TabIndex = 0;
-            this.buttonVer.Text = "Get Windows Version";
-            this.buttonVer.UseVisualStyleBackColor = true;
-            this.buttonVer.Click += new System.EventHandler(this.buttonVer_Click);
+            buttonVer.Location = new System.Drawing.Point(14, 16);
+            buttonVer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonVer.Name = "buttonVer";
+            buttonVer.Size = new System.Drawing.Size(152, 27);
+            buttonVer.TabIndex = 0;
+            buttonVer.Text = "Get Windows Version";
+            buttonVer.UseVisualStyleBackColor = true;
+            buttonVer.Click += buttonVer_Click;
             // 
             // labelVer
             // 
-            this.labelVer.AutoSize = true;
-            this.labelVer.Location = new System.Drawing.Point(148, 19);
-            this.labelVer.Name = "labelVer";
-            this.labelVer.Size = new System.Drawing.Size(97, 13);
-            this.labelVer.TabIndex = 1;
-            this.labelVer.Text = "<windows version>";
+            labelVer.AutoSize = true;
+            labelVer.Location = new System.Drawing.Point(173, 22);
+            labelVer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelVer.Name = "labelVer";
+            labelVer.Size = new System.Drawing.Size(112, 15);
+            labelVer.TabIndex = 1;
+            labelVer.Text = "<windows version>";
             // 
             // buttonSkype
             // 
-            this.buttonSkype.Location = new System.Drawing.Point(13, 102);
-            this.buttonSkype.Name = "buttonSkype";
-            this.buttonSkype.Size = new System.Drawing.Size(129, 23);
-            this.buttonSkype.TabIndex = 6;
-            this.buttonSkype.Text = "Get Skype Firewall rule";
-            this.buttonSkype.UseVisualStyleBackColor = true;
-            this.buttonSkype.Click += new System.EventHandler(this.buttonSkype_Click);
+            buttonSkype.Location = new System.Drawing.Point(15, 118);
+            buttonSkype.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            buttonSkype.Name = "buttonSkype";
+            buttonSkype.Size = new System.Drawing.Size(150, 27);
+            buttonSkype.TabIndex = 6;
+            buttonSkype.Text = "Get Skype Firewall rule";
+            buttonSkype.UseVisualStyleBackColor = true;
+            buttonSkype.Click += buttonSkype_Click;
             // 
             // labelSkype
             // 
-            this.labelSkype.AutoSize = true;
-            this.labelSkype.Location = new System.Drawing.Point(148, 107);
-            this.labelSkype.Name = "labelSkype";
-            this.labelSkype.Size = new System.Drawing.Size(102, 13);
-            this.labelSkype.TabIndex = 7;
-            this.labelSkype.Text = "<skype firewall rule>";
+            labelSkype.AutoSize = true;
+            labelSkype.Location = new System.Drawing.Point(173, 123);
+            labelSkype.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelSkype.Name = "labelSkype";
+            labelSkype.Size = new System.Drawing.Size(119, 15);
+            labelSkype.TabIndex = 7;
+            labelSkype.Text = "<skype firewall rule>";
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(16, 151);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(150, 27);
+            button1.TabIndex = 8;
+            button1.Text = "Get RClone";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // labelRClone
+            // 
+            labelRClone.AutoSize = true;
+            labelRClone.Location = new System.Drawing.Point(174, 157);
+            labelRClone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelRClone.Name = "labelRClone";
+            labelRClone.Size = new System.Drawing.Size(62, 15);
+            labelRClone.TabIndex = 9;
+            labelRClone.Text = "<rClone >";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new System.Drawing.Point(248, 222);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(363, 23);
+            textBox1.TabIndex = 10;
+            // 
+            // button2
+            // 
+            button2.Location = new System.Drawing.Point(455, 348);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(75, 23);
+            button2.TabIndex = 11;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new System.Drawing.Point(536, 348);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(75, 23);
+            button3.TabIndex = 12;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new System.Drawing.Point(248, 251);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new System.Drawing.Size(363, 23);
+            textBox2.TabIndex = 13;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 332);
-            this.Controls.Add(this.labelSkype);
-            this.Controls.Add(this.buttonSkype);
-            this.Controls.Add(this.labelVer);
-            this.Controls.Add(this.buttonVer);
-            this.Controls.Add(this.labelPing);
-            this.Controls.Add(this.buttonPing);
-            this.Controls.Add(this.labelIpAddress);
-            this.Controls.Add(this.buttonGetIpAddress);
-            this.Name = "Form1";
-            this.Text = "ConsoleAppLauncher Samples";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(623, 383);
+            Controls.Add(textBox2);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(textBox1);
+            Controls.Add(labelRClone);
+            Controls.Add(button1);
+            Controls.Add(labelSkype);
+            Controls.Add(buttonSkype);
+            Controls.Add(labelVer);
+            Controls.Add(buttonVer);
+            Controls.Add(labelPing);
+            Controls.Add(buttonPing);
+            Controls.Add(labelIpAddress);
+            Controls.Add(buttonGetIpAddress);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "ConsoleAppLauncher Samples";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -144,6 +219,12 @@
         private System.Windows.Forms.Label labelVer;
         private System.Windows.Forms.Button buttonSkype;
         private System.Windows.Forms.Label labelSkype;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelRClone;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
